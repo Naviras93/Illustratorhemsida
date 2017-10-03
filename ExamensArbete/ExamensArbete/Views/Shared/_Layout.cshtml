@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Illuse Traitor", "Gallery", "Images", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                    <li>@Html.ActionLink("Information", "Information", "Home")</li>
+                    <li>@Html.ActionLink("Gallery", "Gallery", "Images")</li>
+                    <li><a href="https://www.etsy.com/" target="_blank">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content div-bottom">
+        <div>
+            @RenderBody()
+        </div>
+        <br />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                <div class="social-media-bar">
+                    <a href="https://www.google.se/" target="_blank"><img class="social-media-icon" src="~/Other Pictures/SMgoogle.png" /></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="social-media-icon" src="~/Other Pictures/SMfacebook.png" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icon" src="~/Other Pictures/SMinstagram.png" /></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img class="social-media-icon" src="~/Other Pictures/SMlinkedin.png" /></a>
+                    <a href="https://twitter.com/dril/status/922321981" target="_blank"><img class="social-media-icon" src="~/Other Pictures/SMtwitter.png" /></a>
+                </div>
+            </footer>
+        </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

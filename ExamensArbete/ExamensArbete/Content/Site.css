@@ -1,0 +1,136 @@
+﻿body {
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a:visited{
+    color: darkgray;
+}
+a:hover, a:active{
+    color: mediumpurple;
+}
+
+
+#information-photo {
+    float: right;
+    width:200px; 
+    height:200px;
+    margin:0 0 10px 25px;
+}
+ 
+@media(max-width:334px){
+    #information-photo {
+        float: left;
+        position: center;
+    }
+}
+
+#about {
+    max-width: 700px;
+}
+
+.div-bottom {
+    margin-top: 40px;
+}
+
+.view{
+    margin-bottom: 120px;
+}
+
+.gallery-view{
+    max-width: none;
+    overflow: scroll;
+    position: absolute;
+    top: 154px;
+    bottom: 70px;
+    right: 10px;
+    left: 10px;
+}
+
+@media (max-width: 817px){
+    .gallery-view {
+        text-align:center;
+    }
+}
+
+@media (max-width: 542px){
+    .gallery-view {
+        bottom: 95px;
+    }
+}
+
+.gallery-tag-bar{
+    text-align: center;
+    width: 100%;
+}
+
+.gallery-tags{
+    font-size: 20px;
+    margin: 2%;
+}
+
+.gallery-image{
+    height: 160px; 
+    width: 160px; 
+    position: relative;
+    display: inline-block;
+    margin-right: -7px;
+
+}
+
+.gallery-image > img {
+    max-height: 100%;  
+    max-width: 100%; 
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    
+}
+
+footer{
+    background-color: #ffffff;
+    border-top: thin solid #000000;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    left: 0;
+}
+
+footer > p{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-media-bar{
+    display: inline-block;
+    float:right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.social-media-icon{
+    height: 40px;
+    width: 40px;
+}
